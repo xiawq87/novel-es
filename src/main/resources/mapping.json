@@ -1,0 +1,54 @@
+//PUT /novel
+{
+  "mappings": {
+    "novel": {
+      "properties": {
+        "author": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "intro": {
+          "type": "text"
+        },
+        "lastUpdateTime": {
+          "type": "long"
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "score": {
+          "type": "float"
+        },
+        "scorePersonNum": {
+          "type": "long"
+        },
+        "status": {
+          "type": "keyword"
+        },
+        "tags": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "wordNum": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}
